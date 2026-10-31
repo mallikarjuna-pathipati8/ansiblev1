@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: Play1 and Task 1
-    dubug:
+    debug:
      msg: "Play1 and Task 1"
   - name: Play1 and task 2
     debug:
