@@ -4,6 +4,6 @@
   tasks:
   - name: nginx install
     package:
-     - name: nginx
+       name: nginx
        state: present
       
