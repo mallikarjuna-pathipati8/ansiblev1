@@ -9,5 +9,5 @@
     - name: print os family
       debug:
         msg: |
-          OS_Type: { { ansible_facts.os_family } }
-          Distribution: { { ansible_facts.distribution } }
+          OS_Type: {{ ansible_facts.os_family }}
+          Distribution: {{ ansible_facts.distribution }}
