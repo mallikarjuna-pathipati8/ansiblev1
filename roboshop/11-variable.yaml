@@ -1,0 +1,15 @@
+- name: multiple variable check
+  hosts: frontend
+  become: yes
+  vars:
+    course: "ansible from play"
+  vars_files:
+    - course.yaml
+  vars_prompt:
+    - name: course
+      prompt: please enter course
+      private: false
+  tasks:
+    - name: print the course
+      debug:
+        msg: "print the course: {{course}}"
