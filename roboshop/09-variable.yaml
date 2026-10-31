@@ -1,0 +1,8 @@
+- name: variables from inventory
+  hosts: frontend
+  become: yes
+
+  tasks:
+    - name: Print data from inventory
+      debug:
+        msg: "I am learning {{course}} from {{trainer}},duration {{duration}}"
