@@ -2,8 +2,8 @@
   hosts: frontend
   become: yes
 
-  vars:
-    course: "ansible from play"
+  # vars:
+  #   course: "ansible from play"
 
   # vars_files:
   #   - course.yaml
