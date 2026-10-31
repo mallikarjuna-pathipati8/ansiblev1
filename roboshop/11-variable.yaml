@@ -8,10 +8,10 @@
   # vars_files:
   #   - course.yaml
 
-  vars_prompt:
-    - name: course
-      prompt: "Please enter course"
-      private: false
+  # vars_prompt:
+  #   - name: course
+  #     prompt: "Please enter course"
+  #     private: false
 
   tasks:
     - name: print the course
