@@ -1,0 +1,8 @@
+- name: student details
+  first_name: "Arjun"
+  last_name: "Pathipati"
+  addresses: 
+  - type: permanant
+    door: 52
+  - type: temporary
+    door: 79
