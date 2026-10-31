@@ -1,0 +1,15 @@
+- name: demo on tasks vars
+  hosts: local
+  connection: local
+  vars:
+   property: "100 acres"
+  tasks:
+   - name: demo on tasks
+     debug:
+      msg: "Playbook level {{property}}"
+   - name: demo on tasks
+     vars:
+      property: "10 acres"
+      debug:
+       msg: "Tasks level {{property}}"
+  
