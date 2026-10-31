@@ -11,3 +11,6 @@
         msg: |
           OS_Type: {{ ansible_facts.os_family }}
           Distribution: {{ ansible_facts.distribution }}
+    - name: print facts
+      debug:
+        msg: "{{ ansible_facts }}"
