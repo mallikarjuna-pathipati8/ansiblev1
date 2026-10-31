@@ -5,4 +5,4 @@
   tasks:
     - name: print from command prompt
       debug:
-        msg: "user_name"
+        msg: "{{user_name}}"
