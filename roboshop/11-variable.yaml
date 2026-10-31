@@ -15,7 +15,7 @@
 
   tasks:
     - name: print the course
-      vars:
-        course: "ansible from tasks"
+      # vars:
+      #   course: "ansible from tasks"
       debug:
         msg: "Print the course: {{ course }}"
