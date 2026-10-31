@@ -1,6 +1,6 @@
 - name: print facts
   hosts: local
-  connecction: local
+  connection: local
   tasks:
     - name: print facts
       debug:
