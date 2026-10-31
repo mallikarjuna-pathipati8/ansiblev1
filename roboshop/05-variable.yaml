@@ -1,12 +1,11 @@
 - name: print the variables
   hosts: local
   connection: local
-  vars: 
-   couse: Ansible
-   trainer: Arjun
-   duration: 10hrs
+  vars:
+    couse: Ansible
+    trainer: Arjun
+    duration: 10hrs
   tasks:
-   - name: print the variable
-     debug:
-      msg: "i am handson {{couse}} from  {{trainer}},duration {{duration}}"
-    
+    - name: print the variable
+      debug:
+        msg: "i am handson {{couse}} from  {{trainer}},duration {{duration}}"

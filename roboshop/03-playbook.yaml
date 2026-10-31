@@ -2,20 +2,19 @@
   hosts: local
   connection: local
   tasks:
-  - name: Play1 and Task 1
-    debug:
-     msg: "Play1 and Task 1"
-  - name: Play1 and task 2
-    debug:
-     msg: "Play1 and Task 2"
+    - name: Play1 and Task 1
+      debug:
+        msg: "Play1 and Task 1"
+    - name: Play1 and task 2
+      debug:
+        msg: "Play1 and Task 2"
 - name: Playbook2
   hosts: local
   connection: local
   tasks:
-  - name: Play2 and task1
-    debug: 
-     msg: "Play2 and Task 1"
-  - name: Play2 and task2
-    debug: 
-     msg: "Play2 and Task 2"
-
+    - name: Play2 and task1
+      debug:
+        msg: "Play2 and Task 1"
+    - name: Play2 and task2
+      debug:
+        msg: "Play2 and Task 2"
