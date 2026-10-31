@@ -1,4 +1,6 @@
 - name: student details
+  hosts: localhost
+  connection: local
   first_name: "Arjun"
   last_name: "Pathipati"
   addresses: 
