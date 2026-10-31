@@ -1,10 +1,16 @@
 - name: student details
   hosts: localhost
   connection: local
-  first_name: "Arjun"
-  last_name: "Pathipati"
-  addresses: 
-  - type: permanant
-    door: 52
-  - type: temporary
-    door: 79
+  vars: 
+     first_name: "Arjun"
+     last_name: "Pathipati"
+     addresses: 
+     - type: permanant
+       door: 52
+     - type: temporary
+       door: 79
+  tasks:
+   - name: print the data
+     debug:
+      msg: "{{first_name}} and {{last_name}}"
+
