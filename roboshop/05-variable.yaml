@@ -8,5 +8,5 @@
   tasks:
    - name: print the variable
      debug:
-      msg:"i am handson{{couse}} from {{trainer}},duration{{duration}}"
+      msg: "i am handson{{couse}} from {{trainer}},duration{{duration}}"
     
