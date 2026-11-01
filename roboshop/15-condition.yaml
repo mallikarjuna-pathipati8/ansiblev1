@@ -1,0 +1,8 @@
+- name: print eve or odd
+  hosts: local
+  connection: local
+  tasks:
+    - name: print the os
+      debug:
+        msg: "Os is Redhat"
+      when: ansible_facts.Os_Family=="RedHat"
