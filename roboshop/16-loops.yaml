@@ -5,12 +5,12 @@
   gather_facts: true
 
   vars:
-    names:
+    testers:
       - Ramesh
       - Arun
       - Arjun
   tasks:
     - name: Print the list
       debug:
-        msg: "Names are: {{ item }}"
-      loop: { { names } }
+        msg: "testers are: {{ item }}"
+      loop: { { testers } }
