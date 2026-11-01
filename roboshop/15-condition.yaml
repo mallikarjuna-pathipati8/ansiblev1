@@ -1,6 +1,7 @@
 - name: print eve or odd
   hosts: local
   connection: local
+  become: yes
   gather_facts: true
   tasks:
     - name: print the os
