@@ -1,7 +1,7 @@
 - name: Print Data Type
   hosts: local
   connection: local
-  become: local
+  become: yes
 
   vars:
     course: "AIOps with Devops"
