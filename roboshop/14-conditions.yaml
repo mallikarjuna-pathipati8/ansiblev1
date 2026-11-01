@@ -1,0 +1,14 @@
+- name: print eve or odd
+  hosts: local
+  connection: local
+  vars:
+    given_number: 10
+  tasks:
+    - name: print even
+      debug:
+        msg: "Number is : {{ given_number }}"
+      when: given_number %2 ==0
+    - name: print odd
+      debug:
+        msg: "Number is : {{ given_number }}"
+      when: given_number %2 ==0
