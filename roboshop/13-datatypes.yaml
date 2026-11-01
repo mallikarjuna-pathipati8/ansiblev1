@@ -1,0 +1,27 @@
+- name: Print Data Type
+  hosts: local
+  connection: local
+  become: local
+
+  vars:
+    course: "AIOps with Devops"
+    duration_in_months: 4
+    is_live_session: yes
+    packages:
+      - nginx
+      - mongodb
+      - mysql
+    more_details:
+      trainer: Arjun
+      months: 4
+    exact_duration: 4.5
+
+    tasks:
+      - name: Print the data type
+        debug:
+          msg: |
+            name: "{{course}}:{{course|type-debug}}"
+            duration: "{{duration_in_months}}: {{duration_in_months| type-debug}}"
+            is_live_session: "{{is_live_session}}: {{is_live_session| type-debug}}"
+            packages: "{{packages}}: {{packages| type-debug}}"
+            exact_duration: "{{exact_duration}}: {{duration_in_exact_durationmonths| type-debug}}"
