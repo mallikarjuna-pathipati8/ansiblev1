@@ -13,4 +13,4 @@
     - name: Print the list
       debug:
         msg: "testers are: {{ item }}"
-      loop: "{ { testers } }"
+      loop: " {{ testers }} "
