@@ -16,12 +16,12 @@
       months: 4
     exact_duration: 4.5
 
-    tasks:
-      - name: Print the data type
-        debug:
-          msg: |
-            name: "{{course}}:{{course|type-debug}}"
-            duration: "{{duration_in_months}}: {{duration_in_months| type-debug}}"
-            is_live_session: "{{is_live_session}}: {{is_live_session| type-debug}}"
-            packages: "{{packages}}: {{packages| type-debug}}"
-            exact_duration: "{{exact_duration}}: {{duration_in_exact_durationmonths| type-debug}}"
+  tasks:
+    - name: Print the data type
+      debug:
+        msg: |
+          name: "{{course}}:{{course|type_debug}}"
+          duration: "{{duration_in_months}}: {{duration_in_months| type_debug}}"
+          is_live_session: "{{is_live_session}}: {{is_live_session| type_debug}}"
+          packages: "{{packages}}: {{packages| type_debug}}"
+          exact_duration: "{{exact_duration}}: {{duration_in_exact_durationmonths| type_debug}}"
