@@ -1,26 +1,31 @@
-- name: course information
+- name: Course Information
   hosts: local
   connection: local
+
   vars:
-    course: "AIOps with DevSecOps on AWS" # string
-    duration_in_hrs: 150 # number
-    is_live_sessions: true # boolean
-    topics: # list
+    course: "AIOps with DevSecOps on AWS" # String
+    duration_in_hrs: 150 # Integer
+    is_live_sessions: true # Boolean
+
+    topics: # List
       - Linux
       - Shell
       - Ansible
       - Terraform
-    more_details: # dictionary/map
+
+    more_details: # Dictionary / Map
       trainer: sivakumar
       months: 4
-    exact_duration_in_months: 4.5
+
+    exact_duration_in_months: 4.5 # Float
+
   tasks:
-    - name: print info and type
-      debug:
+    - name: Print information and data types
+      ansible.builtin.debug:
         msg: |
-          name: "{{ course }} : {{ course | type_debug }} "
-          duration: {{ duration_in_hrs }} : {{ duration_in_hrs | type_debug }} 
-          is live: {{ is_live_sessions }} : {{ is_live_sessions | type_debug }} 
-          topics are: {{ topics }} : {{ topics | type_debug }} 
-          more details: {{ more_details }} : {{ more_details | type_debug }} 
-          duration: {{ exact_duration_in_months }} : {{ exact_duration_in_months | type_debug }}
+          Course         : {{ course }} ({{ course | type_debug }})
+          Duration       : {{ duration_in_hrs }} ({{ duration_in_hrs | type_debug }})
+          Live Sessions  : {{ is_live_sessions }} ({{ is_live_sessions | type_debug }})
+          Topics         : {{ topics }} ({{ topics | type_debug }})
+          More Details   : {{ more_details }} ({{ more_details | type_debug }})
+          Exact Duration : {{ exact_duration_in_months }} ({{ exact_duration_in_months | type_debug }})
