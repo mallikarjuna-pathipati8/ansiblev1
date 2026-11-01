@@ -7,21 +7,18 @@
     course: "AIOps with DevOps"
     duration_in_months: 4
     is_live_session: true
-
     packages:
       - nginx
       - mongodb
       - mysql
-
     more_details:
       trainer: Arjun
       months: 4
-
     exact_duration: 4.5
 
   tasks:
     - name: Print variable values and data types
-      debug:
+      ansible.builtin.debug:
         msg: |
           Course           : {{ course }} ({{ course | type_debug }})
           Duration         : {{ duration_in_months }} ({{ duration_in_months | type_debug }})
