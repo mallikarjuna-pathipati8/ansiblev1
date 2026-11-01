@@ -1,0 +1,16 @@
+- name: print eve or odd
+  hosts: local
+  connection: local
+  become: yes
+  gather_facts: true
+
+  vars:
+    names:
+      - Ramesh
+      - Arun
+      - Arjun
+  tasks:
+    - name: Print the list
+      debug:
+        msg: "Names are: {{ item }}"
+      loop: { { names } }
