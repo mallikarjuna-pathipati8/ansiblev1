@@ -7,5 +7,7 @@
     duration: 10hrs
   tasks:
     - name: print the variable
+      vars:
+        course: Ansible task
       debug:
         msg: "i am handson {{couse}} from  {{trainer}},duration {{duration}}"
