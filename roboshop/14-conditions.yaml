@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    given_number: 83748374874784783
+    given_number: 83748
   tasks:
     - name: print even
       debug:
