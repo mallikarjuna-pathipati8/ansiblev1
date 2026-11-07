@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-    given_number: 10
+    given_number: 364876
   tasks:
     - name: print even
       debug:
-        msg: "Number is : {{ given_number }}"
+        msg: "Number is : {{ given_number }} Even"
       when: given_number %2 ==0
     - name: print odd
       debug:
-        msg: "Number is : {{ given_number }}"
+        msg: "Number is : {{ given_number }} Odd"
       when: given_number %2 !=0
