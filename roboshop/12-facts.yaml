@@ -21,5 +21,5 @@
     - name: print ansible facts with OS and Distributopn
       debug:
         msg: |
-        OS_TYPE: "{{ ansible_facts.os_family }}"
-        DISTO: "{{ ansible_facts.distribution }}"
+          OS_TYPE: "{{ ansible_facts.os_family }}"
+          DISTO: "{{ ansible_facts.distribution }}"
