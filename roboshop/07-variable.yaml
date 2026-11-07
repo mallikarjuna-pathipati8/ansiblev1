@@ -1,7 +1,8 @@
 - name: vars from external file
   hosts: local
   connection: local
-  vars_files: course.yaml
+  vars_files:
+    - course.yaml
   tasks:
     - name: print the external file
       debug:
