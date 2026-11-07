@@ -12,4 +12,4 @@
   tasks:
     - name: print credentials
       debug:
-        msg: "UserName: {{username}} and {{password}}"
+        msg: "UserName: {{username}} and Password: {{password}}"
