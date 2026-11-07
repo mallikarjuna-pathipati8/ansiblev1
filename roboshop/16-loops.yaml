@@ -4,13 +4,24 @@
   become: yes
   gather_facts: true
 
+  # vars:
+  #   testers:
+  #     - Ramesh
+  #     - Arun
+  #     - Arjun
+  # tasks:
+  #   - name: Print the list
+  #     debug:
+  #       msg: "testers are: {{ item }}"
+  #     loop: "{{ testers }}"
+
   vars:
-    testers:
-      - Ramesh
-      - Arun
+    test:
       - Arjun
+      - Anitha
+      - Arun
   tasks:
-    - name: Print the list
+    - name: print about loops
       debug:
-        msg: "testers are: {{ item }}"
-      loop: "{{ testers }}"
+        msg: "{{ item }}"
+      loop: "{{ test }}"
