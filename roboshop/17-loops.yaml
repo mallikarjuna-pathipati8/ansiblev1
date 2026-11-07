@@ -4,15 +4,28 @@
   become: yes
   gather_facts: true
 
+  # vars:
+  #   packages:
+  #     - nginx
+  #     - mysql
+  #     - htop
+
+  # tasks:
+  #   - name: Install Packages
+  #     package:
+  #       name: "{{item}}"
+  #       state: present
+  #     loop: "{{packages}}"
+
   vars:
-    packages:
+    package:
       - nginx
       - mysql
+      - nodejs
       - htop
-
   tasks:
-    - name: Install Packages
+    - name: install packages
       package:
-        name: "{{item}}"
+        name: "{{ package }}"
         state: present
-      loop: "{{packages}}"
+      loop: "{{ packages }}"
